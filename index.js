@@ -6,32 +6,16 @@ import ReactDom  from "react-dom";
 //note : only remove multiline comment of piece of code to see how piece of code works 
 //single line comments are comments for understandilbilty
 
+// in previous codes  we have seen we were using <div> to render multiple elements 
+// when we use grid/ flexbox this extra div create problems so we use react fragment instead of div
 
-//uptill now we have understood about rendering single element like <h1>
-//n0w we are rendering multilple elements so in jsx we have to enclose all tags in one div 
-//b/c it take only one single elemnt
+//reat fragment <React.fragment><React.fragment/> or if version is 16+ use only <></>
 
-/*
-//method 1:
-ReactDom.render(<div>
-  <h1>hello suman laraee</h1><p>hope you are doing well</p>
-</div>, document.getElementById('root'))
-
-*/
-
-/*
-
-//method 2: (it only works if your react version is greater tha 16 => check version into pkg.json )
-// use comma after element as we use in array
 
 ReactDom.render(
-  [
-  <h1>are you suman?</h1>,
-  <p>if yes then please come in </p>]
-  ,document.getElementById("root")
-);
-
-*/
-
-
+  <>
+    <h1>hello miss suman laraee</h1>
+    <p>i hope you are doing good </p>
+  </>, document.getElementById('root')
+)
 
