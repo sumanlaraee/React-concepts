@@ -1,5 +1,5 @@
-// using jsx in react    jsx=>javascript xml / javascript extension 
-import React, { createElement } from "react";        // if we wanna use jsx we need to import React module 
+
+import React from "react";        // if we wanna use jsx we need to import React module 
 import ReactDom  from "react-dom";
 
 
@@ -7,35 +7,31 @@ import ReactDom  from "react-dom";
 //single line comments are comments for understandilbilty
 
 
-//there are three ways to render an element 
+//uptill now we have understood about rendering single element like <h1>
+//n0w we are rendering multilple elements so in jsx we have to enclose all tags in one div 
+//b/c it take only one single elemnt
 
 /*
-
-//rendering with the help of jsx element 
-ReactDom.render(<h1>hello hi how are you</h1>, document.getElementById('root'))
-
-            //comments (<h1>hello hi how are you</h1> (this line is not html this is jsx ,
-            // babel convert it into real react code))             
-*/
-
-/*
-
-//rendering with pure react 
-
-ReactDom.render(React.createElement('h1', null, 'hello suman'),
-document.getElementById("root"))
-
-//comments(we can do this entire code in one line with help of jsx and translated by bable, so no need to do this  ) 
+//method 1:
+ReactDom.render(<div>
+  <h1>hello suman laraee</h1><p>hope you are doing well</p>
+</div>, document.getElementById('root'))
 
 */
 
 /*
 
-// rendering with javascript only no need of bable 
-var h1 = document.createElement('H1');
-h1.innerHTML="hello suman laraee";
-document.getElementById('root').appendChild(h1);
+//method 2: (it only works if your react version is greater tha 16 => check version into pkg.json )
+// use comma after element as we use in array
 
-//there is a method appendchild we have to add element to root that we have created 
+ReactDom.render(
+  [
+  <h1>are you suman?</h1>,
+  <p>if yes then please come in </p>]
+  ,document.getElementById("root")
+);
 
 */
+
+
+
