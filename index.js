@@ -1,10 +1,18 @@
-import React from "react";
+import React from "react"
 import ReactDom from "react-dom";
-import App from "./App";
-// we will understand simple React and and components (functions ) in react
+import x , {cast , fname} from "./App"
 
-ReactDom.render(
-<>
-<App/>
-   
-</>, document.getElementById("root"))
+
+// here are going to learn about Es6 export import 
+
+
+
+ReactDom.render(<> 
+<ol>
+    <li>
+        {x}
+    </li>
+    <li>{cast}</li>
+    <li>{fname()}</li>
+</ol>
+</>, document.getElementById("root"));
