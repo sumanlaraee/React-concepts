@@ -1,21 +1,19 @@
 import React from "react";
-const a =40;
-const b =4;
-function Addition()
+function Addition(a, b)
 {
 
     const add = a+b;
     return add;
 }
 
-function Subtraction ( )
+function Subtraction (a, b )
 {
     const sub = a-b;
     return sub;
 
 }
 
-function Multiplication ()
+function Multiplication (a, b)
 {
 
     const mult = a*b;
@@ -23,7 +21,7 @@ function Multiplication ()
 }
 
 
-function Division ()
+function Division (a, b)
 {
     const div = a/b;
     return div;

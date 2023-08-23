@@ -4,10 +4,13 @@ import {Addition, Subtraction , Multiplication, Division } from "./Calculator";
 function App()
 {
     return (<>
-           Sum: <Addition/>, 
-           Sub:<Subtraction/>, 
-           Mult: <Multiplication/>, 
-           Div: <Division/>
+          <ol>
+            <li>Sum :{Addition(40,4)}</li>
+            <li>Sub:{Subtraction(40,4)}</li>
+            <li> Mult:{Multiplication(40,4)}</li>
+            <li>Division: {Division(40,4)}</li>
+
+          </ol>
              </>
 
 );
