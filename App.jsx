@@ -1,8 +1,15 @@
-const name ="suman";
-const cast ="laraee";
-function fname ()
+import React from "react";
+import {Addition, Subtraction , Multiplication, Division } from "./Calculator";
+
+function App()
 {
-   return <h1>byeeeee</h1>
+    return (<>
+           Sum: <Addition/>, 
+           Sub:<Subtraction/>, 
+           Mult: <Multiplication/>, 
+           Div: <Division/>
+             </>
+
+);
 }
-export default name; 
-export {cast, fname};
+export default App;
