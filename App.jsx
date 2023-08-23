@@ -1,11 +1,8 @@
-import React from "react";
-import Heading from "./Heading";
-import List from "./List";
-function App()
+const name ="suman";
+const cast ="laraee";
+function fname ()
 {
-    return (<>
-        <Heading/>
-        <List/>
-    </>)
+   return <h1>byeeeee</h1>
 }
-export default App;
+export default name; 
+export {cast, fname};
